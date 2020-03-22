@@ -1,0 +1,106 @@
+------------------------------------------------------------
+TAM 3.3-10 (2019-08-23 13:42:07) 
+R version 3.6.3 (2020-02-29) x86_64, linux-gnu | nodename=son-K50ID | login=unknown 
+
+Date of Analysis: 2020-03-05 14:19:38 
+Time difference of 0.4295552 secs
+Computation time: 0.4295552 
+
+Multidimensional Item Response Model in TAM 
+
+IRT Model: PCM2
+Call:
+TAM::tam.mml(resp = dat, irtmodel = "PCM2")
+
+------------------------------------------------------------
+Number of iterations = 30 
+Numeric integration with 21 integration points
+
+Deviance = 7179.77 
+Log likelihood = -3589.89 
+Number of persons = 431 
+Number of persons used = 431 
+Number of items = 8 
+Number of estimated parameters = 22 
+    Item threshold parameters = 21 
+    Item slope parameters = 0 
+    Regression parameters = 0 
+    Variance/covariance parameters = 1 
+
+AIC = 7224  | penalty = 44    | AIC=-2*LL + 2*p 
+AIC3 = 7246  | penalty = 66    | AIC3=-2*LL + 3*p 
+BIC = 7313  | penalty = 133.45    | BIC=-2*LL + log(n)*p 
+aBIC = 7243  | penalty = 63.43    | aBIC=-2*LL + log((n-2)/24)*p  (adjusted BIC) 
+CAIC = 7335  | penalty = 155.45    | CAIC=-2*LL + [log(n)+1]*p  (consistent AIC) 
+AICc = 7226  | penalty = 46.48    | AICc=-2*LL + 2*p + 2*p*(p+1)/(n-p-1)  (bias corrected AIC) 
+
+------------------------------------------------------------
+EAP Reliability
+[1] 0.721
+------------------------------------------------------------
+Covariances and Variances
+      [,1]
+[1,] 0.501
+------------------------------------------------------------
+Correlations and Standard Deviations (in the diagonal)
+      [,1]
+[1,] 0.708
+------------------------------------------------------------
+Regression Coefficients
+     [,1]
+[1,]    0
+------------------------------------------------------------
+Item Parameters -A*Xsi
+  item   N     M xsi.item AXsi_.Cat1 AXsi_.Cat2 AXsi_.Cat3
+1  It1 431 1.202   -0.390     -0.617     -0.779         NA
+2  It2 429 0.974    1.065     -0.250      0.271      3.196
+3  It3 421 0.917    0.895     -1.079      1.045      2.685
+4  It4 425 0.816    0.490     -0.614      0.979         NA
+5  It5 421 1.349    0.185      0.407      0.264      0.556
+6  It6 424 0.800    0.462     -0.288      0.924         NA
+7  It7 429 1.361    0.134      0.560      0.729      0.401
+8  It8 425 1.767   -0.241      0.881      2.564     -0.722
+  B.Cat1.Dim1 B.Cat2.Dim1 B.Cat3.Dim1
+1           1           2           0
+2           1           2           3
+3           1           2           3
+4           1           2           0
+5           1           2           3
+6           1           2           0
+7           1           2           3
+8           1           2           3
+
+Item Parameters Xsi
+             xsi se.xsi
+It1       -0.390  0.068
+It2        1.065  0.065
+It3        0.895  0.077
+It4        0.490  0.080
+It5        0.185  0.050
+It6        0.462  0.075
+It7        0.134  0.047
+It8       -0.241  0.044
+It1_step1 -0.228  0.103
+It2_step1 -1.315  0.106
+It2_step2 -0.545  0.116
+It3_step1 -1.974  0.111
+It3_step2  1.229  0.170
+It4_step1 -1.104  0.099
+It5_step1  0.221  0.101
+It5_step2 -0.328  0.120
+It6_step1 -0.750  0.099
+It7_step1  0.426  0.105
+It7_step2  0.035  0.137
+It8_step1  1.122  0.155
+It8_step2  1.924  0.381
+
+Item Parameters in IRT parameterization
+  item alpha   beta tau.Cat1 tau.Cat2 tau.Cat3
+1  It1     1 -0.390   -0.228    0.228       NA
+2  It2     1  1.065   -1.315   -0.545    1.860
+3  It3     1  0.895   -1.974    1.229    0.745
+4  It4     1  0.490   -1.104    1.104       NA
+5  It5     1  0.185    0.221   -0.328    0.107
+6  It6     1  0.462   -0.750    0.750       NA
+7  It7     1  0.134    0.426    0.035   -0.462
+8  It8     1 -0.241    1.122    1.924   -3.046
